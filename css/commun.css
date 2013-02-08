@@ -1,0 +1,22 @@
+.copyright {
+	text-align: center;
+	font-style:italic;
+	color:lightgray;	
+}
+
+.erreur
+{
+	background: #fbe3e4 url(../images/failed.png) no-repeat 4px 4px;
+	padding-left: 44px;
+	display: block;
+	clear: left;
+	line-height: 40px;
+	color: #8a1f11;
+	cursor: pointer;
+	border-bottom: 1px solid #fbc2c4;
+}
+
+.inputErreur
+{
+	border-color:#8a1f11;
+}

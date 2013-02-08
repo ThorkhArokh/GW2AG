@@ -1,0 +1,129 @@
+body {
+	background-color:white;
+	margin:0;
+	width:230px;
+	border:1px solid black;
+	padding:2px;
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+	line-height: 125%;
+}
+
+div.spacer
+{
+	visibility: hidden;
+	clear:both; 
+	height:0px; 
+	display:block;
+}
+
+#wrapper {
+	width:100%;
+	height:100%;
+}
+
+ul {
+	list-style:none;
+}
+li {
+	list-style-type: none;
+}
+
+:focus, :active {
+	outline:0;
+}
+
+button::-moz-focus-inner,
+input[type="reset"] ::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+	border: none;
+}
+
+ul {
+	padding: 16px 20px;
+	padding: 1.6rem 2rem;
+	color: #222;
+	background: rgba(255,255,255,.5);
+	-webkit-box-shadow:	inset 0 .3rem 1rem rgba(0,0,0,.4);
+	-moz-box-shadow:	inset 0 .3rem 1rem rgba(0,0,0,.4);
+	-o-box-shadow:		inset 0 3px 10px rgba(0,0,0,.4);
+	-o-box-shadow:		inset 0 .3rem 1rem rgba(0,0,0,.4);
+	box-shadow:			inset 0 3px 10px rgba(0,0,0,.4);
+	box-shadow:			inset 0 .3rem 1rem rgba(0,0,0,.4);
+	-webkit-border-radius:	.6rem;
+	-moz-border-radius:		.6rem;
+	-o-border-radius:		6px;
+	-o-border-radius:		.6rem;
+	border-radius:			6px;
+	border-radius:			.6rem;
+}
+li {
+	padding: 4px 0;
+	padding: .4rem 0;
+}
+li:after {
+	content: '';
+	display: block;
+	clear: left;
+}
+
+img {
+	width:50px;
+	height:50px;
+}
+
+.donjonImg {
+	float:left;
+}
+
+progress {
+	height:20px;
+	background: #2E2E2E;
+	background-image: url("../images/finBarreOff.png");
+	background-position:right top;
+	background-repeat:no-repeat;
+}
+
+progress {
+    color: #E38E00;
+    border-right : 1px solid white;
+	box-shadow: 1px 0px 5px white;
+}
+
+/* Firefox */
+progress::-moz-progress-bar { 
+    background: #E38E00;
+    border-right : 1px solid white;	
+    -moz-box-shadow: 1px 0px 5px white; 
+}
+
+/* Chrome */
+progress::-webkit-progress-value {
+    background: #E38E00;
+    border-right : 1px solid white;
+    -webkit-box-shadow: 1px 0px 5px white;
+}
+
+/* Polyfill */
+progress[aria-valuenow]:before  {
+    background: #E38E00;
+    border-right : 1px solid white;
+    box-shadow: 1px 0px 5px white;
+}
+
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+h1 { font-size: 1.2em; margin: .6em 0; }
+div#users-contain { width: 350px; margin: 20px 0; }
+div#users-contain table { margin: 1em 0; border-collapse: collapse; width: 100%; }
+div#users-contain table td, div#users-contain table th { border: 1px solid #eee; padding: .6em 10px; text-align: left; }
+.ui-dialog .ui-state-error { padding: .3em; }
+.validateTips { border: 1px solid transparent; padding: 0.3em; }
