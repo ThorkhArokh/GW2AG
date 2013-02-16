@@ -36,7 +36,7 @@
     				echo "</div>";
     				echo "<div class='titre'>";
     				echo "<div>".htmlentities($donjon->nom)."</div>";
-    				echo "<progress value='".$donjon->progression."' max='121'></progress>";
+    				echo "<progress value='".$donjon->progression."' max='100'></progress>";
     				echo "</div>";
     				echo "</div>";
     				if(count($donjon->modesLst) > 0) {
@@ -48,7 +48,7 @@
 	    					if($mode->indicDown) {
 	    						$check = "checked";
 	    					}
-	    					echo "<li><input type='checkbox' name='check-".$j."' id='check-".$j."' ".$check." /><label for='check-".$j."'>".htmlentities($mode->nom)."</label></li>";
+	    					echo "<li><input type='checkbox' name='check-".$j."' id='check-".$j."' ".$check." onclick='saveAvanceeMode(this, ".$donjon->id.", ".$mode->id.");'/><label for='check-".$j."'>".htmlentities($mode->nom)."</label></li>";
 	    					$j++;
 	    				}
 	    				echo "</ul>";

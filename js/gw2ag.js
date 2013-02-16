@@ -33,3 +33,15 @@ $(function() {
 		$( "#dialog-form" ).dialog( "open" );
 	});
 });
+
+
+function saveAvanceeMode(checkBox, idDonjon, idMode) {
+	
+	var isDown = checkBox.checked
+	
+	$.ajax({
+		type: "POST",
+		url: "ajax/saveAvanceeMode.php",
+		data: { idDonjon: idDonjon, idMode: idMode, isDown :  isDown}
+		});
+}
